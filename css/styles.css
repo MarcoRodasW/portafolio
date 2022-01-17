@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+:root {
+  --background-dark-color: #16161a;
+  --button-dark-color: #7f5af0;
+  --buttonText-dark-color: #fffffe;
+  --headline-dark-color: #fffffe;
+  --paragraph-dark-color: #94a1b2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--background-dark-color);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--headline-dark-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding: 1.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--headline-dark-color);
+}
+
+.navbar .navbar-logo {
+  font-size: 24px;
+}
+
+.navbar .navbar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 90vh;
+  color: var(--paragraph-dark-color);
+}
+
+.hero .hero-text {
+  font-size: 84px;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+}
+
+.hero .hero-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  gap: 1.5rem;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero-contact .cta {
+  font-size: 20px;
+  padding: 19px 32px;
+  border-radius: 3px;
+}
+
+.hero .hero-contact .hero-contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  color: var(--paragraph-dark-color);
+}
+/*# sourceMappingURL=styles.css.map */
