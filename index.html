@@ -5,59 +5,102 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
    <title>Marco Rodas - Personal portafolio</title>
 </head>
 <body>
-<div class="scroll-container">
+<div class="container">
+         <nav class="navbar">
+            <img src="/img/logo.png" alt="" class="logo">
+            <ul class="navbar-links">
+               <li>
+                  <a href="index.html">Home</a>
+               </li>
+               <li>
+                  <a href="#about">About</a>
+               </li>
+               <li>
+                  <a href="contact.html">Contact</a>
+               </li>
+            </ul>
+         </nav>
 
 <section class="hero">   
-   <div class="container">
-      <nav class="navbar">
-         <img src="/img/logo.png" alt="" class="logo">
-         <ul class="navbar-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-         </ul>
-      </nav>
-      <div class="hero-text">
-         <p><span>Welcome, </span>I'm</p>
+
+    <div class="hero-content-text" data-aos="fade">
+
+         <p class="hero-welcome">Welcome, I'm</p>
          <p class="name">Marco Rodas.</p>
-         <p>I build beatiful web apps, incredible experience and more</p>
-      </div>
-      <div class="hero-contact">
-         <button class="cta">
-         Get in touch
-         </button>
-         <ul class="hero-contact-links">
-            <li>
-               <a href="#">
-                  <img src="/img/github.svg" alt="github">
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                  <img src="/img/linkedin.svg">
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                  <img src="/img/twitter.svg">
-               </a>
-            </li>
+         <p>I'm a web developer with a passion for building beautiful and user-friendly websites</p>
+         <p class="improve">I'm always looking for new opportunities to grow and improve my skills.</p>
 
+         <div class="hero-contact">
+            <a class="cta" href="mailto:mrodasw@gmail.com?subject=Work with you">
+               Get in touch
+            </a>
+            <ul class="hero-contact-links" >
+               <li class="icon">
+                  <a href="https://github.com/MarcoRodasW"  target="_blank">
+                     <img src="/img/github.svg" alt="github">
+                  </a>
+               </li>
+               <li class="icon">
+                  <a href="https://www.linkedin.com/in/marco-rodas" target="_blank">
+                     <img src="/img/linkedin.svg">
+                  </a>
+               </li>
+               <li class="icon">
+                  <a href="https://twitter.com/marcoaurelioro7" target="_blank">
+                     <img src="/img/twitter.svg">
+                  </a>
+               </li>
+            </ul>
+        </div>
+
+   </div>
+
+      <div class="hero-content-img" data-aos="fade-right">
+         <img src="/img/me-standingp.png" alt="">
+      </div>
+
+</section>
+
+<section class="about" id="about">
+   <div class="about-content-text">
+      <h2 class="about-headline">About me</h2>
+      <p>Im a web developer based in Honduras</p>
+      <p>i like to build minimal and beautiful websites.
+      I'm always looking for new opportunities to grow and improve my skills.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis, odit assumenda qui tempora soluta omnis sunt dicta? Nostrum, dignissimos corporis! Illo id nobis sunt dignissimos et. Corporis, illum aperiam!
+      </p>
+      <p>In my free time i like to play baseball and eat hamburgers</p>
+      <div class="about-skills">
+         <P>My Skilss:</P>
+         <ul>
+            <li><img src="/img/html.svg">HTML</li>
+            <li><img src="/img/css3.svg">CSS</li>
+            <li><img src="/img/js.svg">Javascript</li>
+            <li><img src="/img/git.svg">Git</li>
+            <li><img src="/img/mysql.svg">MySQL</li>
          </ul>
       </div>
+      <a href="" class="cv">Dowland CV</a>
    </div>
-   </section>
-
-   <section class="about" id="about">
-      <h1>ABout me</h1>
-   </section>
+   <div class="about-content-img">
+      <img src="/img/profile-picture.webp" alt="">
+   </div>
+</section>
 
    <section class="projects">
       <h1>My projects</h1>
    </section>
-</div>   
+</div>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+     offset: 400,
+     duration: 2000,
+  });
+</script>
 </html>
